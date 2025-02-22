@@ -32,6 +32,29 @@ source .venv/bin/activate
 ```
 Once activated, your terminal prompt should change to indicate you're working in the virtual environment.
 
+### 4. Install Dependencies
+Install all required packages using pip:
+```bash
+pip install -r requirements.txt
+```
+
+Required packages:
+```
+annotated-types==0.7.0
+anyio==4.8.0
+click==8.1.8
+fastapi==0.115.8
+h11==0.14.0
+idna==3.10
+pydantic==2.10.6
+pydantic_core==2.27.2
+redis==5.2.1
+sniffio==1.3.1
+starlette==0.45.3
+typing_extensions==4.12.2
+uvicorn==0.34.0
+```
+
 
 ## Running the Application
 Start the FastAPI server:
@@ -51,6 +74,6 @@ The application will be available at `http://127.0.0.1:8000/`
 ```
 project/
 ├── .venv/              # Virtual environment directory
-└── main.py            # Main application file
-```
+├── requirements.txt    # Project dependencies
+└── main.py             # Main application file
 
